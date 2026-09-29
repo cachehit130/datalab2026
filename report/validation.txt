@@ -1,0 +1,8 @@
+GCC -O2 -Wall -Wextra -Werror
+PASS: 11881164 independent comparisons; 200000 seeded random word pairs plus targeted boundary cases.
+
+Clang -O2 -Wall -Wextra -Werror
+PASS: 11881164 independent comparisons; 200000 seeded random word pairs plus targeted boundary cases.
+
+GCC -O1 -fsanitize=undefined -fno-sanitize-recover=all
+PASS: 11881164 independent comparisons; 200000 seeded random word pairs plus targeted boundary cases.
